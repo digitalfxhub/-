@@ -1,0 +1,217 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; 
+    background-color: #ffffff;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 100px; 
+    padding: 10px;
+}
+
+
+#search-bar {
+    padding: 12px 20px;
+    width: 250px;
+    font-size: 16px; 
+    border: 1px solid #dcdcdc; 
+    border-radius: 25px; 
+    outline: none;
+    background-color: #f5f5f5; 
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left; 
+}
+
+
+#search-bar:hover {
+    background-color: yellow;
+}
+
+
+#search-bar:focus {
+    border-color: #007aff;
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.5);
+}
+
+
+#search-bar::placeholder {
+    color: #aaa; /* Lighter gray placeholder text */
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    #search-bar {
+        width: 250px; /* Adjusted width on smaller screens */
+    }
+}
+
+
+.hidden-buttons {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hidden-buttons button {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0f0;
+    width: 100px;
+    transition: background-color 0.3s;
+}
+
+.hidden-buttons button:hover {
+    background-color: #c8c8c8;
+}
+
+h3 {
+  text-align: center; 
+  margin: 20px; 
+  color: white; 
+  font-size: 25px; 
+  font-weight: 1000; 
+  letter-spacing: 1px; 
+  transition: color 0.3s ease-in-out; 
+  position: relative; 
+  top: -10px;
+}
+
+/* Premium iOS-inspired styles */
+.button-container {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    top: -30px;
+    margin: 20px;
+}
+
+.ios-inspired-button {
+    background: linear-gradient(135deg, #007aff, #34c759); /* iOS blue and green gradient */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.ios-inspired-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ios-inspired-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-buttons {
+    display: none;
+    height: 45px;
+    position: absolute;
+    top: 165px; 
+    left: 0px;
+    z-index: 10;
+    background: #f7f7f8;
+    border-radius: 60px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    position: relative;
+    max-width: 300px; /* Adjustable width */
+}
+
+.button-item {
+    background: #ffffff;
+    color: #007aff;
+    border: 1px solid #ddd;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.button-item:hover {
+    background: #007aff;
+    color: white;
+}
+
+.nav-button {
+    background: transparent;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-button  {
+    font-size: 30px;
+    color: #ff0a00;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover .icon {
+    color: #34c759;
+    transform: scale(1.1);
+}
+
+/* Adding iOS-like shadow to buttons */
+.nav-button:focus, .button-item:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.3);
+}
+
+
+
+
+
+
+.close {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: fixed;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  background: red; /* Dark background similar to Windows 7 style */
+  border-radius: 50%; /* Circular shape */
+  width: 35px; /* Size of the button */
+  height: 35px; /* Size of the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff6f61;
+  text-decoration: none;
+  background: #ff6f61; /* Highlight color on hover/focus */
+}
